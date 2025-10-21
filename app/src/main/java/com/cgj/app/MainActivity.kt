@@ -645,7 +645,7 @@ fun FoodScreen(modifier: Modifier = Modifier) {
                             isLoading = false
                         }
                     }
-                    loadUrl("https://bestellung-ac.mpibs.de")
+                    loadUrl("https://bestellung.meinibs.de/")
                 }
             },
             update = { webView ->
