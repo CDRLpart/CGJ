@@ -4,4 +4,4 @@ A comprehensive Android application for school management with features includin
 
 ## 🚀 Quick Start
 
-Use the prebuilt apk found on the releases page
+Use the prebuilt apk found on the releases page or  [here if you want to Support me (it's still free of charge)](https://katfile.vip/users/seiteistkrass/)
