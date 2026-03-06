@@ -46,9 +46,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
-import androidx.compose.material3.LargeTopAppBar
+import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -257,15 +256,11 @@ fun MainScreen(
         TabItem("Leistungen", R.drawable.ic_grades)
     )
 
-    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
-
     Scaffold(
-        modifier = Modifier
-            .fillMaxSize()
-            .nestedScroll(scrollBehavior.nestedScrollConnection),
+        modifier = Modifier.fillMaxSize(),
         topBar = {
             Column {
-                LargeTopAppBar(
+                TopAppBar(
                     title = { 
                         Text(
                             "CGJ",
@@ -277,7 +272,6 @@ fun MainScreen(
                         navigationIconContentColor = MaterialTheme.colorScheme.onSurface,
                         actionIconContentColor = MaterialTheme.colorScheme.onSurface
                     ),
-                    scrollBehavior = scrollBehavior,
                     actions = {
                         // Reload Button für alle Screens (außer Moodle)
                         if (selectedTab != 2) { // Moodle-Tab überspringen

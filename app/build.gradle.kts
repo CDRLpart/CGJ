@@ -8,6 +8,12 @@ android {
     namespace = "com.cgj.app"
     compileSdk = 34
 
+    sourceSets {
+        getByName("main") {
+            res.srcDirs("src/main/res", "src/main/res-alt")
+        }
+    }
+
     defaultConfig {
         applicationId = "com.cgj.app"
         minSdk = 21
